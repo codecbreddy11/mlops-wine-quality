@@ -5,13 +5,10 @@ __pycache__/
 # Virtual env
 .venv/
 
-# DVC-tracked data & models (we'll push via DVC, not git)
-data/*
-!data/.gitkeep
-models/*
-!models/.gitkeep
+# Let DVC write precise ignore lines per file
+# (do NOT blanket-ignore data/* or models/*)
 
-# MLflow local store (unused when on DagsHub, but ignore just in case)
+# MLflow local store (optional to ignore)
 mlruns/
 
 # Jupyter
